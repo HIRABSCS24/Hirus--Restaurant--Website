@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hirus restaurant — Karachi's Finest Dining</title>
+  <meta name="description" content="Hirus Restaurant Karachi — Authentic flavours from Pakistan, Italy, Continental and more. Dine in, takeaway, and reservations available." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">HR</div>
+      <div class="logo-text">
+        <span class="logo-name">Hirus</span>
+        <span class="logo-sub">Restaurant · Karachi</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservation.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-book">Book a Table</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reservation.html">Reservations</a>
+    <a href="contact.html">Contact</a>
+    <a href="reservation.html" class="mobile-book">Book a Table</a>
+  </div>
+
+  <!-- Hero section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>️</span >Since 2018
+      </div>
+      <h1 class="hero-title">
+        Fantastic Experience
+        <em>You'll Remember 4Ever</em>
+      </h1>
+      <p class="hero-subtitle">
+        From the heart of Karachi to your plate—bringing you a perfect blend of authentic Pakistani spices, rich Italian pastas, and continental classics cooked to perfection
+      </p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn-primary">
+          <i class="fas fa-utensils"></i> Explore Menu
+        </a>
+      </div>
+
+  </section>
+
+<!-- about -->
+
+  <section class="section about-section" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+       
+         <!-- image relative position and fade effect 
+         Developer : HIRA NAZ 
+         FB and Insta : myra_dev -->
+         
+        <div class="about-imgs reveal">
+          <img
+            src="img2.jpg"
+            alt="Hirus Restaurant interior"
+            class="about-img-main"
+          />
+          <img
+            src="img1.jpg"
+            alt="Hirus food close up"
+            class="about-img-small"
+          />
+          <div class="about-since">
+            <div class="yr">2018</div>
+            <div class="est">PKT.</div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">About Hirus</span>
+          <h2 class="section-title">More Than a Meal — <em>It's a Memory</em></h2>
+          <div class="divider divider-left" style="margin-bottom:1.5rem;"></div>
+          <p class="section-body">
+            Hirus was founded in 2018 with one simple purpose — to bring people
+            together over genuinely delicious food. Nestled in the heart of Karachi,
+            our kitchen serves a curated mix of Pakistani, Italian, Continental and more,
+            made fresh every single day.
+          </p>
+          <p class="section-body" style="margin-top:1rem;">
+            Whether you're here for a family dinner, a date night, or a quick lunch
+            with friends — we promise you'll leave happy, full, and already planning
+            your next visit.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feat">
+              <span class="about-feat-icon"></span>
+              <div class="about-feat-text">
+                <strong>Fresh Ingredients</strong>
+                <span>Sourced locally every morning</span>
+              </div>
+            </div>
+            <div class="about-feat">
+              <span class="about-feat-icon"></span>
+              <div class="about-feat-text">
+                <strong>Expert Chefs</strong>
+                <span>Trained in multiple cuisines</span>
+              </div>
+            </div>
+            <div class="about-feat">
+              <span class="about-feat-icon"></span>
+              <div class="about-feat-text">
+                <strong>100% Halal</strong>
+                <span>Certified halal kitchen</span>
+              </div>
+            </div>
+            <div class="about-feat">
+              <span class="about-feat-icon"></span>
+              <div class="about-feat-text">
+                <strong>Free Parking</strong>
+                <span>Dedicated parking available</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="menu.html" class="btn-primary"><i class="fas fa-book-open"></i> View Menu</a>
+            <a href="reservation.html" class="btn-outline">Reserve Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- category section preview -->
+
+  <section class="section menu-section" id="menu">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Categories</span>
+        <h2 class="section-title">Something for <em>Everyone</em></h2>
+        <p style="font-size:0.9rem;color:var(--muted);margin-top:0.8rem;">
+          From sizzling desi dishes to wood-fired Italian — our menu has it all.
+        </p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-tab="pakistani"> Pakistani</button>
+        <button class="menu-tab" data-tab="italian"> Italian</button>
+        <button class="menu-tab" data-tab="continental"> Continental</button>
+        <button class="menu-tab" data-tab="desserts">Desserts</button>
+        <button class="menu-tab" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- pakistani -->
+      <div class="menu-content active" id="home-pakistani">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Karahi" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">★ Best Seller</span>
+              <h3 class="menu-card-name">Chicken Karahi</h3>
+              <p class="menu-card-desc">juicy chicken in a rich tomato-ginger masala, cooked in a traditional karahi. Served with naan.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 850</span>
+                <button class="menu-card-btn" onclick="addToCart('Chicken Karahi', 850)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="biryani.jpg" alt="Biryani" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag"></span>
+              <h3 class="menu-card-name">Hirus Special Biryani</h3>
+              <p class="menu-card-desc">Fragrant basmati rice with slow-cooked spiced chicken, saffron, and crispy fried onions.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 650</span>
+                <button class="menu-card-btn" onclick="addToCart('Hirus Special Biryani', 650)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="seekh kabab.jpg" alt="BBQ" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag"></span>
+              <h3 class="menu-card-name">Seekh Kebab Platter</h3>
+              <p class="menu-card-desc">Freshly ground spiced beef on skewers, charcoal grilled. Served with raita and salad.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 750</span>
+                <button class="menu-card-btn" onclick="addToCart('Seekh Kebab Platter', 750)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- italian -->
+      <div class="menu-content" id="home-italian">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <img src="pasta.jpg" alt="Pasta" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Chef's Pick</span>
+              <h3 class="menu-card-name">Creamy Alfredo Pasta</h3>
+              <p class="menu-card-desc">Fettuccine in a velvety parmesan cream sauce with grilled chicken and fresh herbs.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 950</span>
+                <button class="menu-card-btn" onclick="addToCart('Creamy Alfredo Pasta', 950)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Pizza" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Wood-Fired</span>
+              <h3 class="menu-card-name">Margherita Pizza</h3>
+              <p class="menu-card-desc">Classic tomato base, fresh mozzarella, basil leaves on a thin, crispy crust.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 1100</span>
+                <button class="menu-card-btn" onclick="addToCart('Margherita Pizza', 1100)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="mashroom.jpg" alt="Risotto" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Seasonal</span>
+              <h3 class="menu-card-name">Mushroom Risotto</h3>
+              <p class="menu-card-desc">Creamy arborio rice with sautéed mushrooms, parmesan, white wine, and fresh thyme.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 1050</span>
+                <button class="menu-card-btn" onclick="addToCart('Mushroom Risotto', 1050)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- continental -->
+      <div class="menu-content" id="home-continental">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Steak" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag"></span>
+              <h3 class="menu-card-name">Grilled Beef Steak</h3>
+              <p class="menu-card-desc">200g grilled beef with mushroom sauce, mashed potatoes, and seasonal vegetables.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 1800</span>
+                <button class="menu-card-btn" onclick="addToCart('Grilled Beef Steak', 1800)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Salmon" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Seafood</span>
+              <h3 class="menu-card-name">Pan-Seared Salmon</h3>
+              <p class="menu-card-desc">Atlantic salmon, lemon butter sauce, steamed broccoli, and garlic roasted potatoes.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 1650</span>
+                <button class="menu-card-btn" onclick="addToCart('Pan-Seared Salmon', 1650)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80" alt="Chicken" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Popular</span>
+              <h3 class="menu-card-name">Herb Roasted Chicken</h3>
+              <p class="menu-card-desc">Half roasted chicken marinated in herbs, served with coleslaw and seasoned fries.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 1350</span>
+                <button class="menu-card-btn" onclick="addToCart('Herb Roasted Chicken', 1350)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dessert -->
+      <div class="menu-content" id="home-desserts">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <img src="lava cake.jpg" alt="Chocolate" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Must Try</span>
+              <h3 class="menu-card-name">Molten Lava Cake</h3>
+              <p class="menu-card-desc">Warm dark chocolate cake with a gooey center, served with vanilla ice cream.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 450</span>
+                <button class="menu-card-btn" onclick="addToCart('Molten Lava Cake', 450)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="newyork cheese cake.jpg" alt="Cheesecake" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag"></span>
+              <h3 class="menu-card-name">New York Cheesecake</h3>
+              <p class="menu-card-desc">Classic dense cheesecake on a buttery biscuit base, topped with fresh berry compote.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 400</span>
+                <button class="menu-card-btn" onclick="addToCart('New York Cheesecake', 400)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="jamun.jpg" alt="Gulab Jamun" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Desi Favourite</span>
+              <h3 class="menu-card-name">Gulab Jamun</h3>
+              <p class="menu-card-desc">Soft milk-solid dumplings soaked in rose-flavored sugar syrup. Served warm.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 250</span>
+                <button class="menu-card-btn" onclick="addToCart('Gulab Jamun', 250)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- drinks -->
+      <div class="menu-content" id="home-drinks">
+        <div class="menu-grid">
+          <div class="menu-card reveal">
+            <img src="mango lasi.jpg" alt="Juice" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Refreshing</span>
+              <h3 class="menu-card-name">Fresh Mango Lassi</h3>
+              <p class="menu-card-desc">Thick, chilled yogurt drink blended with Sindhri mangoes and a hint of cardamom.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 280</span>
+                <button class="menu-card-btn" onclick="addToCart('Fresh Mango Lassi', 280)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="oreo shake.jpg" alt="Shake" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">Popular</span>
+              <h3 class="menu-card-name">Oreo Milkshake</h3>
+              <p class="menu-card-desc">Thick creamy vanilla shake blended with crushed Oreos, whipped cream on top.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 350</span>
+                <button class="menu-card-btn" onclick="addToCart('Oreo Milkshake', 350)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Lemonade" class="menu-card-img" />
+            <div class="menu-card-body">
+              <span class="menu-card-tag">House Special</span>
+              <h3 class="menu-card-name">Hirus Mint Lemonade</h3>
+              <p class="menu-card-desc">Fresh squeezed lemon, crushed mint, chilled sparkling water with a pinch of chaat masala.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">Rs. 220</span>
+                <button class="menu-card-btn" onclick="addToCart('Hirus Mint Lemonade', 220)">Add to Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+        <a href="menu.html" class="btn-outline"><i class="fas fa-book-open"></i> See Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- special offer banner -->
+  
+  <div class="specials-banner">
+    <h2>Weekend <em>Family Deal</em></h2>
+    <p>Every Friday & Saturday — Make your weekends special with our signature family platter for 4 and get flat 15% OFF. Book your table today.</p>
+    <a href="reservation.html" class="btn-white"><i class="far fa-calendar-check"></i> Reserve Now</a>
+  </div>
+
+  <!-- gallery -->
+  <section class="section gallery-section" id="gallery">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="eyebrow">Our Gallery</span>
+        <h2 class="section-title">Moments and Meals<em>at Hirus</em></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=85" alt="Fine dining" />
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Karahi" />
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="pasta.jpg" alt="Pasta" />
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant interior" />
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Steak" />
+          <div class="gallery-overlay"><span>🔍</span></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;" class="reveal">
+        <a href="gallery.html" class="btn-outline"><i class="fas fa-images"></i> View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- testimonals -->
+ 
+  <section class="section testi-section">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="section-title">Our Happy <em>Guests</em></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testi-grid">
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <p class="testi-text">i literllay like the dishes and vibe, chicken Karahi on our weekend family dinner was very tasty and spice level bilkul perfect tha aur chicken bohot achi thi,soft soft and according to me highly recommended...</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SA</div>
+            <div>
+              <div class="testi-name">Sara Ahmed</div>
+              <div class="testi-loc">Defence, Karachi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <p class="testi-text">finally a place in Karachi where all kind of food vareity is available..the steak and pasta are amazing. Came for a enjoying me time and the ambiance was very beautiful</p>
+          <div class="testi-author">
+            <div class="testi-avatar">OK</div>
+            <div>
+              <div class="testi-name">Omar Khan</div>
+              <div class="testi-loc">Clifton, Karachi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">★ ★ ★ ★ ★</div>
+          <p class="testi-text">Hirus is our go-to for every celebration. Booked for my anniversary and they arranged everything beautifully. The food was extraordinary and service was top and staff bohat ache thay and slowed music in background..omg veryyy beautiful place</p>
+          <div class="testi-author">
+            <div class="testi-avatar">NZ</div>
+            <div>
+              <div class="testi-name">Nadia Zuberi</div>
+              <div class="testi-loc">Gulshan-e-Iqbal, Karachi</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  reservation section -->
+  <section class="section res-section" id="reservation">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <span class="eyebrow">Reservations</span>
+        <h2 class="section-title">Book Your <em>Table</em></h2>
+        <p style="font-size:0.9rem;color:var(--muted);margin-top:0.8rem;">Reserve in advance — we fill up fast, especially weekends.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="res-grid">
+        <!-- FORM -->
+        <div class="res-form-box reveal">
+          <div id="resForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" id="firstName" placeholder="e.g. Mazhar" />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Hussain" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="phone" placeholder="+92 33 11111111" />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" id="email" placeholder="emailusername@gmail.com" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Date</label>
+                <input type="text" name="date" class="form-input" placeholder="DD / MM / YYYY">
+
+              </div>
+              <div class="form-group">
+                <label>Time</label>
+                <select id="resTime">
+                  <option value="" disabled selected>Select time</option>
+                  <option>12:00 PM</option>
+                  <option>1:00 PM</option>
+                  <option>2:00 PM</option>
+                  <option>6:00 PM</option>
+                  <option>7:00 PM</option>
+                  <option>8:00 PM</option>
+                  <option>9:00 PM</option>
+                  <option>10:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Guests</label>
+                <select id="resGuests">
+                  <option value="" disabled selected>How many?</option>
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>3 People</option>
+                  <option>4 People</option>
+                  <option>5 People</option>
+                  <option>6 People</option>
+                  <option>7+ People</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Occasion</label>
+                <select id="resOccasion">
+                  <option value="">None</option>
+                  <option>Birthday Party</option>
+                  <option>Family Dinner </option>
+                  <option>Business Lunch</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Special Requests</label>
+              <textarea id="resRequests" placeholder="Any Issue, seating preferences, or special notes..."></textarea>
+            </div>
+            <button class="form-submit" onclick="submitReservation()">
+              <i class="far fa-calendar-check"></i> Confirm Reservation
+            </button>
+          </div>
+          <div class="form-success" id="resSuccess">
+            <div class="check"></div>
+            <h3>Reservation Confirmed!</h3>
+            <p>We've received your booking. Our team will call you shortly to confirm. See you at Hirus!</p>
+          </div>
+        </div>
+
+        <!-- info -->
+        <div class="res-info reveal">
+          <div class="res-info-block">
+            <div class="res-info-label">Opening Hours</div>
+            <div class="hours-list">
+              <div class="hours-row"><span class="day">Monday – Thursday</span><span class="time">12:00 PM – 11:00 PM</span></div>
+              <div class="hours-row"><span class="day">Friday</span><span class="time">1:00 PM – 12:00 AM</span></div>
+              <div class="hours-row"><span class="day">Saturday</span><span class="time">12:00 PM – 12:00 AM</span></div>
+              <div class="hours-row"><span class="day">Sunday</span><span class="time">12:00 PM – 11:00 PM</span></div>
+            </div>
+          </div>
+          <div class="res-info-block">
+            <div class="res-info-label">Contact Us</div>
+            <div class="contact-item" style="margin-bottom:0.8rem;">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+92 21 333 4444</p>
+              </div>
+            </div>
+            <div class="contact-item" style="margin-bottom:0.8rem;">
+              <div class="contact-icon">​📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>Hirusrestaurant@karchi.pk</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">​🗺️</div>
+              <div>
+                <h4>Location</h4>
+                <p>Karachi, Pakistan</p>
+              </div>
+            </div>
+          </div>
+        
+  </section>
+
+ <!-- foter -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo-name">
+            <div class="footer-logo-icon">HR</div>
+            Hirus
+          </div>
+          <div class="footer-tagline">Restaurant · Karachi, Pakistan</div>
+          <p class="footer-about">
+            Serving Karachi with love since 2018. Pakistani, Italian, Continental and more —
+            all under one roof. Come hungry, leave happy.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Menu</p>
+          <ul class="footer-links">
+            <li><a href="menu.html">Pakistani Cuisine</a></li>
+            <li><a href="menu.html">Italian Cuisine</a></li>
+            <li><a href="menu.html">Continental</a></li>
+            <li><a href="menu.html">Desserts</a></li>
+            <li><a href="menu.html">Drinks</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i> +92 21 333 4444</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> Hirusrestaurant@karchi.pk</div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i> Open Daily 12PM – 11PM</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Hirus Restaurant. All rights reserved</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- cart -->
+  <div class="toast" id="cartToast">
+    <span class="toast-icon"></span>
+    <span id="toastMsg">Item added!</span>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <img src="" alt="" class="lightbox-img" id="lbImg" />
+  </div>
+
+
+ <!--  Js section start -->
+  <script>
+    // navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // menu tabs (homepage)
+    document.querySelectorAll('.menu-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.menu-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        const target = document.getElementById('home-' + tab.dataset.tab);
+        if (target) {
+          target.classList.add('active');
+          target.querySelectorAll('.reveal').forEach((el, i) => {
+            el.classList.remove('visible');
+            setTimeout(() => el.classList.add('visible'), i * 100);
+          });
+        }
+      });
+    });
+
+    // add to cart (toast notification)
+    function addToCart(name, price) {
+      const toast = document.getElementById('cartToast');
+      document.getElementById('toastMsg').textContent = name + ' added — Rs. ' + price.toLocaleString();
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // rservation form
+    function submitReservation() {
+      const fn    = document.getElementById('firstName').value.trim();
+      const ln    = document.getElementById('lastName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const date  = document.getElementById('resDate').value;
+      const time  = document.getElementById('resTime').value;
+      const guests= document.getElementById('resGuests').value;
+
+      if (!fn || !ln) { showToast('⚠️ Please enter your full name.'); return; }
+      if (!phone)     { showToast('⚠️ Please enter your phone number.'); return; }
+      if (!email || !email.includes('@')) { showToast('⚠️ Please enter a valid email.'); return; }
+      if (!date)      { showToast('⚠️ Please select a date.'); return; }
+      if (!time || time === 'Select time') { showToast('⚠️ Please select a time.'); return; }
+      if (!guests)    { showToast('⚠️ Please select number of guests.'); return; }
+
+      const selected = new Date(date);
+      const today    = new Date(); today.setHours(0,0,0,0);
+      if (selected < today) { showToast('⚠️ Please choose a future date.'); return; }
+
+      document.getElementById('resForm').style.display    = 'none';
+      document.getElementById('resSuccess').style.display = 'block';
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('cartToast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+
+    // ── Newsletter
+    function subscribeNews() {
+      const email = document.getElementById('newsEmail').value.trim();
+      if (!email || !email.includes('@')) { showToast('⚠️ Enter a valid email.'); return; }
+      document.getElementById('newsMsg').style.display = 'block';
+      document.getElementById('newsEmail').value = '';
+    }
+
+    // ── Gallery lightbox
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        document.getElementById('lbImg').src = item.querySelector('img').src;
+        document.getElementById('lightbox').classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    document.getElementById('lbClose').addEventListener('click', closeLb);
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target.id === 'lightbox') closeLb(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+    function closeLb() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ── Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          ro.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => ro.observe(el));
+
+    // ── Set min date for reservation
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const dateInput = document.getElementById('resDate');
+    if (dateInput) dateInput.min = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
