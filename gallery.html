@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gallery — Hirus Restaurant Karachi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">HR</div>
+      <div class="logo-text"><span class="logo-name">Hirus</span><span class="logo-sub">Restaurant · Karachi</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="reservation.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-book">Book a Table</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a>
+    <a href="reservation.html">Reservations</a><a href="contact.html">Contact</a>
+    <a href="reservation.html" class="mobile-book">Book a Table</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1800&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow" style="color:var(--terra-light);">Visual Stories</span>
+      <h1>Our <em style="font-style:italic;color:var(--terra-light);">Gallery</em></h1>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--cream);">
+    <div class="section-inner">
+      <div class="section-header reveal" style="margin-bottom:2rem;">
+        <span class="eyebrow"></span>
+        <h2 class="section-title">Food, Ambiance & <em>drinks</em></h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- filter -->
+      <div class="gallery-filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <!-- grid -->
+      <div class="gallery-page-grid" id="galGrid">
+        <div class="gallery-item" data-cat="food"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Karahi" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="ambiance"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Interior" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="food"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Steak" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="drinks"><img src="mango lasi.jpg" alt="Lassi" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="food"><img src="pasta.jpg" alt="Pasta" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="ambiance"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80" alt="Dining" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="desserts"><img src="lava cake.jpg" alt="Lava Cake" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="food"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="drinks"><img src="oreo shake.jpg" alt="Milkshake" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="ambiance"><img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&q=80" alt="Restaurant" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="desserts"><img src="newyork cheese cake.jpg" alt="Cheesecake" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+        <div class="gallery-item" data-cat="food"><img src="beef haleem.jpg" alt="beef haleem" loading="lazy"/><div class="gallery-overlay"><span>🔍</span></div></div>
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+        <a href="reservation.html" class="btn-primary"><i class="far fa-calendar"></i> Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo-name"><div class="footer-logo-icon">HR</div>Hirus</div>
+          <div class="footer-tagline">Restaurant · Karachi, Pakistan</div>
+          <p class="footer-about">Serving Karachi with love since 2018. Pakistani, Italian, Continental and more —
+            all under one roof. Come hungry, leave happy.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Menu</p>
+          <ul class="footer-links">
+            <li><a href="menu.html">Pakistani Cuisine</a></li>
+            <li><a href="menu.html">Italian Cuisine</a></li>
+            <li><a href="menu.html">Continental</a></li>
+            <li><a href="menu.html">Desserts</a></li>
+            <li><a href="menu.html">Drinks</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i> +92 21 333 4444</div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i> Hirusrestaurant@karchi.pk</div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i> Open Daily 12PM – 11PM</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Hirus Restaurant. All rights reserved</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <img src="" alt="" class="lightbox-img" id="lbImg" />
+  </div>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active'); mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
+      hamburger.classList.remove('active'); mobileMenu.classList.remove('open'); document.body.style.overflow = '';
+    }));
+
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('#galGrid .gallery-item').forEach(item => {
+          const show = f === 'all' || item.dataset.cat === f;
+          item.style.display = show ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Lightbox
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        document.getElementById('lbImg').src = item.querySelector('img').src;
+        document.getElementById('lightbox').classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    document.getElementById('lbClose').addEventListener('click', () => {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    document.getElementById('lightbox').addEventListener('click', e => {
+      if (e.target.id === 'lightbox') { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { document.getElementById('lightbox').classList.remove('open'); document.body.style.overflow = ''; }
+    });
+
+    function subscribeNews() {
+      const email = document.getElementById('newsEmail').value.trim();
+      if (!email || !email.includes('@')) return;
+      document.getElementById('newsMsg').style.display = 'block';
+      document.getElementById('newsEmail').value = '';
+    }
+
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => { if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); ro.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+  </script>
+</body>
+</html>
